@@ -73,4 +73,6 @@ $generator = new GenerateTestSuite(
 	)
 );
 
-echo $generator->html($argv[1]);
+$writeFilePointer = fopen("_suite.html", "w");
+fwrite($writeFilePointer, $generator->html($argv[1]));
+fclose($writeFilePointer);
