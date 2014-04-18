@@ -1,7 +1,5 @@
 <?php
 
-// TODO: 初期化時コマンドライン引数を受け取れるように
-
 class GenerateTestSuite
 {
 	public $testTitle;
